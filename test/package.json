@@ -1,0 +1,16 @@
+{
+	"name": "@produck/eslint-rules-test",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "MIT",
+	"description": "",
+	"devDependencies": {
+		"@produck/eslint-rules": "^0.0.0",
+		"@types/mocha": "^10.0.7",
+		"mocha": "^10.7.3"
+	}
+}
