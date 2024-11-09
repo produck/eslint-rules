@@ -12,7 +12,4 @@ export default {
 		'semi': ['error', 'always'],
 		'comma-dangle': ['error', 'always-multiline'],
 	},
-	excludedFiles: [
-		'**/*.ts',
-	],
 };
