@@ -1,7 +1,5 @@
-/**
- * @type {import('eslint').Linter.ConfigOverride}
- */
-export default {
+/** @type {import('eslint').Linter.Config} */
+export const config = {
 	linterOptions: {
 		noInlineConfig: true,
 	},
@@ -13,3 +11,15 @@ export default {
 		'comma-dangle': ['error', 'always-multiline'],
 	},
 };
+
+import { includeIgnoreFile } from '@eslint/compat';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+export function excludeGitIgnore(eslintConfigPath) {
+	const __filename = fileURLToPath(eslintConfigPath);
+	const __dirname = path.dirname(__filename);
+	const gitignorePath = path.resolve(__dirname, '.gitignore');
+
+	return includeIgnoreFile(gitignorePath);
+}

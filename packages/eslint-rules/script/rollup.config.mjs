@@ -1,4 +1,4 @@
-import { createRequire } from 'node:module';
+import { createRequire, builtinModules } from 'node:module';
 import path from 'node:path';
 
 import { defineConfig } from 'rollup';
@@ -24,7 +24,10 @@ const moduleList = [
 export default moduleList.map(config => {
 	return defineConfig({
 		input: path.resolve('src/index.mjs'),
-		treeshake: 'smallest',
+		external: [
+			...Object.keys(meta.dependencies),
+			...builtinModules.map(name => `node:${name}`),
+		],
 		output: {
 			interop: 'esModule',
 			file: config.output,
