@@ -3,7 +3,7 @@
 	"version": "0.2.2",
 	"main": "./src/index.mjs",
 	"type": "module",
-	"types": "index.d.ts",
+	"types": "src/index.d.ts",
 	"exports": {
 		"import": "./src/index.mjs",
 		"require": "./src/index.gen.cjs",
