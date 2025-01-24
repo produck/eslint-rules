@@ -17,7 +17,7 @@
 		"tsconfig.json"
 	],
 	"dependencies": {
-		"@eslint/compat": "^1.2.4"
+		"@eslint/compat": "^1.2.5"
 	},
 	"scripts": {
 		"lint": "eslint --fix",
