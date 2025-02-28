@@ -1,6 +1,6 @@
 {
 	"name": "@produck/eslint-rules",
-	"version": "0.2.5",
+	"version": "0.2.6",
 	"main": "src/index.mjs",
 	"type": "module",
 	"types": "src/index.d.ts",
@@ -15,8 +15,8 @@
 		"src"
 	],
 	"peerDependencies": {
-		"eslint": ">=9.0.0",
-		"@eslint/compat": ">=1.2.0"
+		"@eslint/compat": ">=1.2.0",
+		"eslint": ">=9.0.0"
 	},
 	"scripts": {
 		"lint": "eslint --fix"
