@@ -1,6 +1,6 @@
 {
 	"name": "@produck/eslint-rules",
-	"version": "0.2.5",
+	"version": "0.2.6",
 	"main": "./src/index.mjs",
 	"type": "module",
 	"types": "src/index.d.ts",
