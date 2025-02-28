@@ -1,12 +1,11 @@
 {
 	"name": "@produck/eslint-rules",
-	"version": "0.2.6",
-	"main": "./src/index.mjs",
+	"version": "0.2.5",
+	"main": "src/index.mjs",
 	"type": "module",
 	"types": "src/index.d.ts",
 	"exports": {
 		"import": "./src/index.mjs",
-		"require": "./src/index.gen.cjs",
 		"types": "./src/index.d.ts"
 	},
 	"publishConfig": {
@@ -16,12 +15,11 @@
 		"src"
 	],
 	"peerDependencies": {
+		"eslint": ">=9.0.0",
 		"@eslint/compat": ">=1.2.0"
 	},
 	"scripts": {
-		"lint": "eslint --fix",
-		"build": "rollup -c script/rollup.config.mjs",
-		"prepublishOnly": "npm run build"
+		"lint": "eslint --fix"
 	},
 	"keywords": [
 		"eslint",
@@ -29,5 +27,5 @@
 	],
 	"author": "ChaosLee",
 	"license": "MIT",
-	"description": ""
+	"description": "Common eslint rules of Produck team."
 }
