@@ -12,9 +12,9 @@ export const config = {
 	},
 };
 
-import { includeIgnoreFile } from '@eslint/compat';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { includeIgnoreFile } from '@eslint/compat';
 
 export function excludeGitIgnore(eslintConfigPath) {
 	const __filename = fileURLToPath(eslintConfigPath);

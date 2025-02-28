@@ -13,11 +13,10 @@
 		"access": "public"
 	},
 	"files": [
-		"src",
-		"tsconfig.json"
+		"src"
 	],
-	"dependencies": {
-		"@eslint/compat": "^1.2.6"
+	"peerDependencies": {
+		"@eslint/compat": ">=1.2.0"
 	},
 	"scripts": {
 		"lint": "eslint --fix",
