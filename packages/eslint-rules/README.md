@@ -44,9 +44,9 @@ import `config` to apply the Produck conventions:
 
 ```js
 // eslint.config.mjs
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import { config } from "@produck/eslint-rules";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import * as ProduckEslint from '@produck/eslint-rules';
 
 export default [
 	{
@@ -58,7 +58,7 @@ export default [
 		},
 	},
 	pluginJs.configs.recommended,
-	config,
+	ProduckEslint.config,
 ];
 ```
 
@@ -71,9 +71,9 @@ dependencies, etc.:
 
 ```js
 // eslint.config.mjs
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import { config, excludeGitIgnore } from "@produck/eslint-rules";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import * as ProduckEslint from '@produck/eslint-rules';
 
 export default [
 	{
@@ -85,8 +85,8 @@ export default [
 		},
 	},
 	pluginJs.configs.recommended,
-	config,
-	excludeGitIgnore(import.meta.url),
+	ProduckEslint.config,
+	ProduckEslint.excludeGitIgnore(import.meta.url),
 ];
 ```
 
@@ -97,13 +97,13 @@ projects:
 
 ```js
 // eslint.config.mjs
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import { config, excludeGitIgnore } from "@produck/eslint-rules";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import * as ProduckEslint from '@produck/eslint-rules';
 
 export default [
-	{ files: ["**/*.{js,mjs,cjs,ts}"] },
+	{ files: ['**/*.{js,mjs,cjs,ts}'] },
 	{
 		languageOptions: {
 			globals: {
@@ -114,8 +114,8 @@ export default [
 	},
 	pluginJs.configs.recommended,
 	...tseslint.configs.recommended,
-	config,
-	excludeGitIgnore(import.meta.url),
+	ProduckEslint.config,
+	ProduckEslint.excludeGitIgnore(import.meta.url),
 ];
 ```
 
