@@ -5,8 +5,10 @@
 	"type": "module",
 	"types": "src/index.d.ts",
 	"exports": {
-		"import": "./src/index.mjs",
-		"types": "./src/index.d.ts"
+		".": {
+			"import": "./src/index.mjs",
+			"types": "./src/index.d.ts"
+		}
 	},
 	"publishConfig": {
 		"access": "public"
