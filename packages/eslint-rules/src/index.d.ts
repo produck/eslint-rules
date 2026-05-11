@@ -1,4 +1,4 @@
-import * as EsLint from 'eslint';
+﻿import * as EsLint from 'eslint';
 
 /**
  * Pre-defined ESLint flat config object containing
@@ -15,5 +15,5 @@ export const config: EsLint.Linter.Config;
  *   the project root.
  */
 export function excludeGitIgnore(
-	eslintConfigPath: string,
+eslintConfigPath: string,
 ): EsLint.Linter.Config;

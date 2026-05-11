@@ -17,11 +17,13 @@
 		"src"
 	],
 	"peerDependencies": {
-		"@eslint/compat": ">=1.2.0",
-		"eslint": ">=9.0.0"
+		"@eslint/config-helpers": ">=0.6.0",
+		"eslint": ">=10.3.0"
 	},
 	"scripts": {
-		"lint": "eslint --fix"
+		"test": "node --test test/index.mjs",
+		"coverage": "node --test --experimental-test-coverage test/index.mjs",
+		"lint": "eslint src test"
 	},
 	"keywords": [
 		"eslint",

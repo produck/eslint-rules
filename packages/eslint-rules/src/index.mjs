@@ -4,7 +4,7 @@ export const config = {
 		noInlineConfig: true,
 	},
 	rules: {
-		'indent': ['error', 'tab'],
+		'indent': ['error', 2],
 		'linebreak-style': ['error', 'unix'],
 		'quotes': ['error', 'single'],
 		'semi': ['error', 'always'],
@@ -14,12 +14,15 @@ export const config = {
 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { includeIgnoreFile } from '@eslint/compat';
+import { includeIgnoreFile } from '@eslint/config-helpers';
 
 export function excludeGitIgnore(eslintConfigPath) {
 	const __filename = fileURLToPath(eslintConfigPath);
 	const __dirname = path.dirname(__filename);
 	const gitignorePath = path.resolve(__dirname, '.gitignore');
 
-	return includeIgnoreFile(gitignorePath);
+	return includeIgnoreFile(gitignorePath, {
+		name: 'gitignore',
+		gitignoreResolution: true,
+	});
 }

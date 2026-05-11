@@ -4,6 +4,8 @@
 	"scripts": {
 		"deps:install": "npm -v && npm install",
 		"deps:ci-install": "npm install --include=optional",
+		"test": "npm run test --workspaces --if-present",
+		"coverage": "npm run coverage --workspaces --if-present",
 		"lint": "npm run eslint --workspaces --if-present",
 		"publish": "npm run lint && lerna publish"
 	},
@@ -12,12 +14,12 @@
 	],
 	"license": "MIT",
 	"devDependencies": {
-		"@eslint/compat": "^2.0.2",
+		"@eslint/config-helpers": "^0.6.0",
 		"@eslint/js": "^10.0.1",
-		"@types/node": "^25.3.3",
-		"eslint": "^10.0.2",
-		"globals": "^17.4.0",
-		"lerna": "^9.0.5",
-		"typescript-eslint": "^8.56.1"
+		"@types/node": "^25.6.2",
+		"eslint": "^10.3.0",
+		"globals": "^17.6.0",
+		"lerna": "^9.0.7",
+		"typescript-eslint": "^8.59.2"
 	}
 }
