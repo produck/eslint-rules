@@ -1,6 +1,7 @@
 {
 	"name": "@produck/eslint-rules-workspace",
 	"private": true,
+	"deprecated": "This package has been archived and migrated to @produck/.github. Please use that package instead.",
 	"scripts": {
 		"deps:install": "npm -v && npm install",
 		"deps:ci-install": "npm install --include=optional",

@@ -1,10 +1,10 @@
-﻿# AI Collaboration Policy (Repo Level)
+﻿# AI Collaboration Policy (Repo Level) - ARCHIVED
 
-This repository is the source implementation of Produck organization lint
-rules.
+**⚠️ This repository has been archived and migrated to `produck/.github`.**
 
-Because of that special role, this repository links with organization-level
-governance from `produck/.github`.
+This repository was previously the source implementation of Produck organization lint rules.
+
+Because of that special role, this repository linked with organization-level governance from `produck/.github`. All future development occurs in that centralized repository.
 
 ## Inherited Organization Baseline
 
@@ -33,12 +33,12 @@ Precedence: repository-specific rules may be stricter than this baseline.
 - This repository uses tab indentation for source style (exception
   documented).
 
-## Policy Linkage
+## Migration Notice
 
+This repository has been archived. For the latest ESLint rules and policies:
 - Organization source: `https://github.com/produck/.github`
 
-This repository adheres to organization-level policies and does not define
-additional technical contracts.
+**All new development and maintenance should be done in the centralized `produck/.github` repository.**
 
 ## Commands
 

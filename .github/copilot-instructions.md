@@ -1,7 +1,8 @@
 ﻿# Copilot Instructions For This Repository
 
-This repository is the source implementation of organization-level lint
-conventions.
+⚠️ **ARCHIVED**: This repository has been migrated to `produck/.github` and is no longer actively maintained. These instructions are kept for historical reference.
+
+Previously, this repository was the source implementation of organization-level lint conventions.
 
 ## Priority
 
